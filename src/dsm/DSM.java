@@ -81,7 +81,7 @@ public class DSM {
 		//path = path + ".py";
 		//System.out.println("Path string: " + path);
 		File outputFile = new File(path);
-		String filePath = outputFile.getAbsolutePath();
+		//String filePath = outputFile.getAbsolutePath();
 		//System.out.println("Line 85: " + filePath);
         //FileWriter fw = new FileWriter(outputFile.getAbsoluteFile());
         BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile.getAbsolutePath()));
