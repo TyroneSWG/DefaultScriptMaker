@@ -86,10 +86,15 @@ public class DSM {
         //FileWriter fw = new FileWriter(outputFile.getAbsoluteFile());
         BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile.getAbsolutePath()));
         
+        if (config.getProperty("WATERMARK", "TRUE").equals("TRUE")) {
+        	bw.write("# Created with DefaultScriptMaker");
+        	bw.newLine();
+        }
         bw.write("import sys");
         bw.newLine();
         bw.newLine();
         bw.write("def setup(core, object):");
+        bw.newLine();
         bw.write("	return");
         bw.close();
         System.out.println("Created file " + outputFile.getAbsolutePath());
