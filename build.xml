@@ -50,7 +50,7 @@
         <antcall target="build"/>
     </target>
     <target name="test">
-        <java classname="" failonerror="true" fork="yes">
+        <java classname="dsm.DSM" failonerror="true" fork="yes">
             <classpath refid="DefaultScriptMaker.classpath"/>
         </java>
     </target>
